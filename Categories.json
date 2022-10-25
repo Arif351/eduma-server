@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Photo Editing"
+    },
+    {
+        "id": 2,
+        "name": "Video Editing"
+    },
+    {
+        "id": 3,
+        "name": "3D Design"
+    },
+    {
+        "id": 4,
+        "name": "Adobe All"
+    },
+    {
+        "id": 5,
+        "name": "Animation"
+    },
+    {
+        "id": 6,
+        "name": "MS Office"
+    }
+]
