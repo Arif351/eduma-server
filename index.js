@@ -8,8 +8,27 @@ app.use(cors());
 
 
 const categories = require('./Categories.json')
+const courseDetails = require('./courseDetails.json')
+
+
 app.get('/course-categories', (req, res) => {
     res.send(categories)
+})
+
+app.get('/allCourses', (req, res) => {
+    res.send(courseDetails)
+})
+
+app.get('/courseDetails/:id', (req, res) => {
+    const id = req.params.id
+    const eachCourse = courseDetails.find(c => c.id === id);
+    res.send(eachCourse)
+})
+
+app.get('/category/:id', (req, res) => {
+    const id = req.params.id
+    const category = courseDetails.filter(ce => ce._id === id);
+    res.send(category)
 })
 
 
