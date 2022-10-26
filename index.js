@@ -15,13 +15,13 @@ app.get('/course-categories', (req, res) => {
     res.send(categories)
 })
 
-app.get('/allCourses', (req, res) => {
+app.get('/courseDetails', (req, res) => {
     res.send(courseDetails)
 })
 
 app.get('/courseDetails/:id', (req, res) => {
     const id = req.params.id
-    const eachCourse = courseDetails.find(c => c.id === id);
+    const eachCourse = courseDetails.find(c => c._id === id);
     res.send(eachCourse)
 })
 
